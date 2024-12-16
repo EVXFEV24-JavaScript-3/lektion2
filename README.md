@@ -1,27 +1,30 @@
-# Lektion2
+---
+author: Lektion 2
+date: MMMM dd, YYYY
+paging: "%d / %d"
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+# Teams lektion 2
 
-## Development server
+Hej och välkommen!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Agenda
 
-## Code scaffolding
+1. Frågor
+2. Redovisningar
+3. En titt på uppgifterna
+4. Genomgång av övningar (1-8)
+5. Genomgång av input, output, events och lifecycles
+6. Övning med handledning
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+# Fråga
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Jag lyckas inte få Angular att fungera, när jag skapar ett helt nytt projekt så får jag inte med app.module filen. Får istället en app.config och en app.routes. Är det något jag missat som måste göras för att få in app module? Gissar på att det är därför det inte fungerar som det ska
 
-## Running unit tests
+# Svar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+I den nya versionen av Angular verkar dem ha ändrat detta. Det går att köra ändå, utan app.module.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Alternativt kan man skapa projekt med: `ng new <app> --routing=false --standalone=false`
